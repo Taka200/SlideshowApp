@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     let pictureArray = ["picture1", "picture2", "picture3", "picture4", "picture5"]
     var slideShow: Int = 0
    
+
     @IBOutlet weak var slideShowImage: UIImageView!
     
     
