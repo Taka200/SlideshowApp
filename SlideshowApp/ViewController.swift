@@ -37,17 +37,21 @@ class ViewController: UIViewController {
     
     
     @IBAction func returnButton(_ sender: UIButton) {
-        if slideShow != 0 {
-            slideShow -= 1
-        } else {
-            slideShow = 4
+        if timer == nil {    //再生中は戻る、進むボタンを無効化
+            if slideShow != 0 {
+                    slideShow -= 1
+            } else {
+                slideShow = 4
+            }
+            slideShowImage.image = UIImage(named: pictureArray[slideShow])
         }
-        slideShowImage.image = UIImage(named: pictureArray[slideShow])
     }
+    
+    
     @IBAction func playButton(_ sender: UIButton) {
         //タイマーの作成・始動
         if timer == nil {
-            Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
+            timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(updateTimer(_:)), userInfo: nil, repeats: true)
         } else {
             timer.invalidate()
             timer = nil
@@ -56,12 +60,14 @@ class ViewController: UIViewController {
     
     
     @IBAction func forwardButton(_ sender: UIButton) {
-        if slideShow != 4{
-            slideShow += 1
-        } else {
-            slideShow = 0
+        if timer == nil {    //再生中は戻る、進むボタンを無効化
+            if slideShow != 4{
+                slideShow += 1
+            } else {
+                slideShow = 0
+            }
+            slideShowImage.image = UIImage(named: pictureArray[slideShow])
         }
-        slideShowImage.image = UIImage(named: pictureArray[slideShow])
     }
     
     
