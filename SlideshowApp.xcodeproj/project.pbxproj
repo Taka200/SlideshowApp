@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B9D33F7220DB575006F131F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9D33F6220DB575006F131F /* SecondViewController.swift */; };
 		3BA774032209CF5B000A9159 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA774022209CF5B000A9159 /* AppDelegate.swift */; };
 		3BA774052209CF5B000A9159 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA774042209CF5B000A9159 /* ViewController.swift */; };
 		3BA774082209CF5B000A9159 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BA774062209CF5B000A9159 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B9D33F6220DB575006F131F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		3BA773FF2209CF5B000A9159 /* SlideshowApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideshowApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA774022209CF5B000A9159 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BA774042209CF5B000A9159 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				3BA774092209CF5D000A9159 /* Assets.xcassets */,
 				3BA7740B2209CF5D000A9159 /* LaunchScreen.storyboard */,
 				3BA7740E2209CF5D000A9159 /* Info.plist */,
+				3B9D33F6220DB575006F131F /* SecondViewController.swift */,
 			);
 			path = SlideshowApp;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9D33F7220DB575006F131F /* SecondViewController.swift in Sources */,
 				3BA774052209CF5B000A9159 /* ViewController.swift in Sources */,
 				3BA774032209CF5B000A9159 /* AppDelegate.swift in Sources */,
 			);

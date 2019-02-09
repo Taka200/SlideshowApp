@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     let pictureArray = ["picture1", "picture2", "picture3", "picture4", "picture5"]
     var slideShow: Int = 0
     var timer: Timer!
-   
 
     @IBOutlet weak var slideShowImage: UIImageView!
     
@@ -70,7 +69,14 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func unwind(_ segue: UIStoryboardSegue) {
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let secondViewController:SecondViewController = segue.destination as! SecondViewController
+        
+        secondViewController.picture = pictureArray[slideShow]
+    }
     
     
 }
