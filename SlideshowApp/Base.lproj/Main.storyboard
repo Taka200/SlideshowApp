@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="30" id="U3d-99-Tay"/>
                                     <constraint firstAttribute="width" constant="77" id="Xot-KU-LpN"/>
                                 </constraints>
-                                <state key="normal" title="再生・停止"/>
+                                <state key="normal" title="再生"/>
                                 <connections>
                                     <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="prw-yo-o05"/>
                                 </connections>
@@ -87,6 +87,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="forwardButton" destination="1Sb-Ad-nsG" id="f02-ZW-UfD"/>
+                        <outlet property="playButton" destination="abo-xF-aXy" id="gmw-kg-euB"/>
+                        <outlet property="returnButton" destination="WF3-bN-0V6" id="jlO-gF-YU8"/>
                         <outlet property="slideShowImage" destination="kac-eh-IVT" id="wfV-CR-12n"/>
                     </connections>
                 </viewController>
