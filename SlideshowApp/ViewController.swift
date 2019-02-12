@@ -2,7 +2,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let pictureArray = ["picture1", "picture2", "picture3", "picture4", "picture5"]
+    let pictureArray = ["picture1.jpg", "picture2.jpg", "picture3.jpg", "picture4.jpg", "picture5.jpg"]
     var slideShow: Int = 0
     var timer: Timer!
 
@@ -80,6 +80,8 @@ class ViewController: UIViewController {
         
         timer.invalidate()
         timer = nil
+        returnButton.isEnabled = true
+        forwardButton.isEnabled = true
         playButton.setTitle("再生", for: .normal)
         
         
